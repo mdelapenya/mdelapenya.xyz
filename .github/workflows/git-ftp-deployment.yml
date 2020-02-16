@@ -1,0 +1,23 @@
+name: FTP Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: git-ftp-action
+      uses: sebastianpopp/git-ftp-action@2.1.0
+      with:
+        # URL
+        url: "${{ secrets.FTP_SERVER}}/httpdocs/"
+        # FTP login name
+        user: "${{ secrets.FTP_USERNAME }}"
+        # FTP password
+        password: "${{ secrets.FTP_PASSWORD }}"
