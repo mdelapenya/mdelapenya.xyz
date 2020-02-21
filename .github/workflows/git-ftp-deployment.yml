@@ -16,7 +16,7 @@ jobs:
       uses: sebastianpopp/git-ftp-action@2.1.0
       with:
         # URL
-        url: "${{ secrets.FTP_SERVER}}/httpdocs/"
+        url: "${{ secrets.FTP_SERVER}}/${{ secrets.FTP_DIR}}/"
         # FTP login name
         user: "${{ secrets.FTP_USERNAME }}"
         # FTP password
