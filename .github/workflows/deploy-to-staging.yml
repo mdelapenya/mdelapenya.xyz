@@ -1,4 +1,4 @@
-name: FTP Deployment
+name: Staging Deployment
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       uses: sebastianpopp/git-ftp-action@2.1.0
       with:
         # URL
-        url: "${{ secrets.FTP_SERVER}}/${{ secrets.FTP_DIR}}/"
+        url: "${{ secrets.FTP_SERVER}}/${{ secrets.STAGING_FTP_DIR}}/"
         # FTP login name
         user: "${{ secrets.FTP_USERNAME }}"
         # FTP password
