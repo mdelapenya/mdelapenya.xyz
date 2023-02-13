@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: git-ftp-action
-      uses: sebastianpopp/git-ftp-action@2.1.0
+      uses: sebastianpopp/git-ftp-action@3.0.0
       with:
         # URL
         url: "${{ secrets.FTP_SERVER}}/${{ secrets.FTP_DIR}}/"
