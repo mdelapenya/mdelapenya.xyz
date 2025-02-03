@@ -25,6 +25,7 @@ jobs:
       run: git submodule update
 
     - name: Build Hugo
+      working-directory: blog
       run: hugo build
 
     - name: git-ftp-action
