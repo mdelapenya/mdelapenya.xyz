@@ -22,6 +22,7 @@ jobs:
         extended: true
     
     - name: Sync Hugo theme
+      working-directory: blog
       run: |
         git submodule add https://github.com/gokarna-theme/gokarna-hugo.git themes/gokarna || true
         git submodule update
