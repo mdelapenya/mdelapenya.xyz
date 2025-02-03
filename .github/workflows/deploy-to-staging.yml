@@ -35,7 +35,7 @@ jobs:
       with:
         # URL
         url: "${{ secrets.FTP_SERVER}}/${{ secrets.STAGING_FTP_DIR}}/"
-        syncroot: "blog/public"
+        syncroot: "./blog/public"
         # FTP login name
         user: "${{ secrets.FTP_USERNAME }}"
         # FTP password
