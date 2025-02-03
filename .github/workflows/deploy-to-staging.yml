@@ -28,7 +28,7 @@ jobs:
       working-directory: blog
       run: |
         hugo build
-        tree public
+        tree .
 
     - name: git-ftp-action
       uses: sebastianpopp/git-ftp-action@3.0.0
