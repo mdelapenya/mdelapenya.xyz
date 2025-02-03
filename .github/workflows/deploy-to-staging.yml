@@ -27,7 +27,7 @@ jobs:
     - name: Build Hugo
       working-directory: blog
       run: |
-        hugo build
+        hugo build --config hugo.toml
         tree .
 
     - name: git-ftp-action
