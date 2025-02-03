@@ -1,5 +1,4 @@
 .DS_Store
 
-blog/public/
+public/
 .hugo_build.lock
-blog/themes

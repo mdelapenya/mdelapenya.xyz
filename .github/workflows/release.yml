@@ -14,11 +14,19 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: '0'
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.143.0'
+        extended: true
+
     - name: git-ftp-action
       uses: sebastianpopp/git-ftp-action@3.0.0
       with:
         # URL
         url: "${{ secrets.FTP_SERVER}}/${{ secrets.FTP_DIR}}/"
+        syncroot: "blog/public"
         # FTP login name
         user: "${{ secrets.FTP_USERNAME }}"
         # FTP password
