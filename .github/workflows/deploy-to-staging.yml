@@ -20,15 +20,8 @@ jobs:
       with:
         hugo-version: '0.143.0'
         extended: true
-    
-    - name: Sync Hugo theme
-      working-directory: blog
-      run: |
-        git submodule add https://github.com/gokarna-theme/gokarna-hugo.git themes/gokarna || true
-        git submodule update
 
     - name: Build Hugo
-      working-directory: blog
       run: |
         hugo build --config hugo.toml
         tree public
@@ -39,7 +32,6 @@ jobs:
       with:
         # URL
         url: "${{ secrets.FTP_SERVER}}/${{ secrets.STAGING_FTP_DIR}}/"
-        syncroot: "./blog/public/"
         # FTP login name
         user: "${{ secrets.FTP_USERNAME }}"
         # FTP password
