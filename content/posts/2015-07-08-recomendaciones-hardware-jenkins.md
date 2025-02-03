@@ -21,7 +21,7 @@ Uno de los retos más grandes al configurar por primera vez una instancia de Jen
 
 El nodo maestro de Jenkins servirá peticiones HTTP y almacenará toda la información de tu instancia de Jenkins en su directorio $JENKINS_HOME: configuraciones, históricos de ejecuciones, plugins instalados, etc.). Es importante tener en cuenta además que aquellos nodos maestros que se ejecuten en alta disponibilidad usando el plugin de CloudBees "High Availability plugin" tendrán que instalar el directorio $JENKINS_HOME en un servidor de datos de la red, el cual será accesible a los servidores de Jenkins por NFS o algún otro protocolo de compatición de archivos.
 
-> *Para más información sobre dimensionar nodos maestro basándose en  necesidades organizacionales, por favor consulta 'Architecting for Scale' [http://jenkins-cookbook.cloudbees.com/docs/jenkins-cookbook/
+> *Para más información sobre dimensionar nodos maestro basándose en necesidades organizacionales, por favor consulta 'Architecting for Scale' [http://jenkins-cookbook.cloudbees.com/docs/jenkins-cookbook/
 _right_sizing_jenkins_masters.html#_calculating_how_many_jobs_masters_and_executors_are_needed](http://jenkins-cookbook.cloudbees.com/docs/jenkins-cookbook/
 _right_sizing_jenkins_masters.html#_calculating_how_many_jobs_masters_and_executors_are_needed)*
 

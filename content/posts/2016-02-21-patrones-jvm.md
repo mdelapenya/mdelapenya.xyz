@@ -272,7 +272,7 @@ La Plataforma Java proporciona un conjunto rico de APIs para el procesado de doc
 
 ### Interfaz Nativa Java (Java Native Interface, JNI)
 
-**JNI** es una interfaz de programación estándar para escribir métodos nativos Java y embeber la JVM dentro de aplicaciones nativas. Su objetivo primario es la compatibilidad binaria  de librerías nativas de métodos en todas las implementaciones de la JVM para una plataforma dada.
+**JNI** es una interfaz de programación estándar para escribir métodos nativos Java y embeber la JVM dentro de aplicaciones nativas. Su objetivo primario es la compatibilidad binaria de librerías nativas de métodos en todas las implementaciones de la JVM para una plataforma dada.
 
 ### Mecanismo de Extensión
 
