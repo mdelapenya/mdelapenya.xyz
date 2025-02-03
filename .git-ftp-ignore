@@ -5,3 +5,4 @@
 .git-ftp-ignore
 .git-ftp-include
 .gitlab-ci.yml
+!./public
