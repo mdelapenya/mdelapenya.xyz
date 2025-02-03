@@ -928,7 +928,7 @@ Por defecto, el método clone hace un "*shallow copy*", o copia de poca profundi
 
 * java.lang.Object#clone() (la clase tiene que implementar la interfaz java.lang.Cloneable)
 
-Todas las clases que implementan la interfaz *java.lang.Cloneable* deben implementar el método *clone()*, que retorna una instancia del mismo tipo , con las siguientes consideraciones, obtenidas de su Javadoc:
+Todas las clases que implementan la interfaz *java.lang.Cloneable* deben implementar el método *clone()*, que retorna una instancia del mismo tipo, con las siguientes consideraciones, obtenidas de su Javadoc:
 
 {{< highlight java >}}* ...
 * The method {@code clone} for class {@code Object} performs a
@@ -1574,7 +1574,7 @@ Java dispone de una interfaz denominada *Iterator*, que es utilizada en un gran 
 
 Esta interfaz permite iterar sobre una colección de elementos. Sus implementaciones más conocidas o utilizadas son las listas, los mapas y los conjuntos, en sus diferentes implementaciones. De este modo, en Java tendremos las interfaces *List*, *Map* y *Set*, y algunas de sus implementaciones, como son *ArrayList*, *LinkedList*, *HashMap*, *ConcurrentHashMap*, *HashSet*, o *TreeMap*, entre otras.
 
-Además de esos tipos de colecciones, tenemos otras clases completamente diferentes que implementan el patrón, como es la clase *java.util.Scanner* , que permite escanear texto para buscar tipos primitivos y cadenas utilizando expresiones regulares, o la clase
+Además de esos tipos de colecciones, tenemos otras clases completamente diferentes que implementan el patrón, como es la clase *java.util.Scanner*, que permite escanear texto para buscar tipos primitivos y cadenas utilizando expresiones regulares, o la clase
 
 En todas ellas aparece el patrón Iterator, pues disponen de tres métodos en la interfaz: *next()*, el cual retorna el siguiente elemento de la colección; *hasNext()*, el cual indica si existen más elementos tras el elemento actual; y *remove()*, que elimina el elemento actual.
 
