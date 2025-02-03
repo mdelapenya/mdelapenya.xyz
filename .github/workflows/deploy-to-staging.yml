@@ -24,7 +24,6 @@ jobs:
     - name: Build Hugo
       run: |
         hugo build --config hugo.toml
-        tree public
 
     - name: git-ftp-action
       uses: sebastianpopp/git-ftp-action@3.0.0

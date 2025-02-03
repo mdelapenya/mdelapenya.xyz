@@ -21,12 +21,16 @@ jobs:
         hugo-version: '0.143.0'
         extended: true
 
+    - name: Build Hugo
+      run: |
+        hugo build --config hugo.toml
+
     - name: git-ftp-action
       uses: sebastianpopp/git-ftp-action@3.0.0
       with:
         # URL
         url: "${{ secrets.FTP_SERVER}}/${{ secrets.FTP_DIR}}/"
-        syncroot: "blog/public"
+        syncroot: ./public
         # FTP login name
         user: "${{ secrets.FTP_USERNAME }}"
         # FTP password
