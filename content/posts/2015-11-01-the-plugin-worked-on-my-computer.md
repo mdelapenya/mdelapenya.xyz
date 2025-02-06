@@ -3,7 +3,7 @@ title: "\"The plugin worked on my computer\" is not valid anymore"
 date: 2015-11-01T09:16:43+02:00
 description: "The plugin worked on my computer"
 categories: development
-tags: [development]
+tags: [development, liferay, arquillian]
 type: post
 weight: 25
 showTableOfContents: false
